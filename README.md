@@ -8,7 +8,8 @@ It is a set of extra packages to be used with ZF2 MVC.
 Features added:
 
 - Packages module with 
-    - ACL to control user and session
+    - ACL (easy of use)
+    - Authentication and session control
     - TableGateway implementation
     - Entity class
     - Service class
