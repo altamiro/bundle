@@ -15,9 +15,9 @@ use Bundle\Service\Service;
 class Permission extends Service {
 
   /**
-   * id of the log line "public" table acl_role.
+   * id of the log line "guest" table acl_role.
    */
-  const ROLE_PUBLIC_ID = 1;
+  const ROLE_GUEST_ID = 1;
 
   /**
    * constant return
