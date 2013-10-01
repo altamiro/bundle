@@ -88,14 +88,14 @@ class TableGateway extends AbstractTableGateway
         $id = (int) isset($data[$this->primaryKeyField]) ? $data[$this->primaryKeyField] : 0;
         if ($id == 0) {
             if ($this->insert($data) < 1)
-                throw new EntityException("Insert erro", 1);
+                throw new EntityException("Insert error", 1);
 
             $object->id = $this->lastInsertValue;
         } else {
             if (! $this->get($id)) 
                 throw new EntityException('Id does not exist');
             if ($this->update($data, array($this->primaryKeyField => $id)) < 1)
-                throw new EntityException("Update erro", 1);
+                throw new EntityException("Update error", 1);
         }
         return $object;
     }
