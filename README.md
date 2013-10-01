@@ -1,4 +1,23 @@
 Bundle for Zend Framework 2
-===
+=======================
 
-Package set for Zend Framework 2
+Introduction
+------------
+It is a set of extra packages to be used with ZF2 MVC.
+
+Features added:
+
+- Packages module with 
+    - ACL to control user and session
+    - TableGateway implementation
+    - Entity class
+    - Service class
+    - AdapterServiceFactory using module-based db configuration
+
+
+Composer/Packagist Users
+========================
+
+Please note the name of this project's package has changed to altamiro/bundle
+in order to match composer/packagist's new naming conventions. Please update your composer.json
+to use the new package name.
